@@ -19,6 +19,7 @@
         android:id="@+id/textView" />
 
     <ImageView
+        android:contentDescription="@string/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/sysu"
@@ -49,6 +50,7 @@
         app:layout_constraintLeft_toRightOf="@+id/StuID"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:ems="12"
         android:textSize="18sp"
         android:inputType="number"
@@ -96,7 +98,8 @@
             android:text="@string/choice1"
             android:textSize="18sp"
             app:layout_constraintRight_toLeftOf="@+id/choice2"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:checked="true"/>
         <RadioButton
             android:id="@+id/choice2"
             android:layout_width="wrap_content"
@@ -117,12 +120,13 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
-        android:paddingButtom="5dp"
+        android:paddingBottom="5dp"
         android:background="@drawable/shape_corner"
         app:layout_constraintTop_toBottomOf="@+id/choices"
         app:layout_constraintRight_toLeftOf="@+id/btn2"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
     <Button
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
@@ -133,7 +137,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
-        android:paddingButtom="5dp"
+        android:paddingBottom="5dp"
         android:background="@drawable/shape_corner"
         app:layout_constraintTop_toBottomOf="@+id/choices"
         app:layout_constraintLeft_toRightOf="@+id/btn1"
