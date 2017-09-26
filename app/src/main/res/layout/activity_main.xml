@@ -40,6 +40,7 @@
         app:layout_constraintRight_toLeftOf="@+id/StuIDinput"
         app:layout_constraintTop_toTopOf="@+id/StuIDinput"
         app:layout_constraintBottom_toBottomOf="@+id/StuIDinput"
+        android:layout_marginLeft="20dp"
         app:layout_constraintHorizontal_chainStyle="packed" />
 
     <EditText
