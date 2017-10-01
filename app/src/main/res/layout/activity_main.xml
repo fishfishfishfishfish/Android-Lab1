@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -111,39 +112,41 @@
             android:layout_marginLeft="10dp"/>
     </RadioGroup>
 
-    <Button
+    <info.hoang8f.widget.FButton
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/signin"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:background="@drawable/shape_corner"
         app:layout_constraintTop_toBottomOf="@+id/choices"
         app:layout_constraintRight_toLeftOf="@+id/btn2"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="20dp"
-        app:layout_constraintHorizontal_chainStyle="packed"/>
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/signup"
-        android:textColor="@color/white"
-        android:textSize="18sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
-        android:background="@drawable/shape_corner"
+        fbutton:buttonColor="@color/colorPrimary"
+        fbutton:shadowEnabled="true"/>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/choices"
         app:layout_constraintLeft_toRightOf="@+id/btn1"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp" />
-
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        fbutton:buttonColor="@color/colorPrimary"
+        fbutton:shadowEnabled="true"/>
 </android.support.constraint.ConstraintLayout>
